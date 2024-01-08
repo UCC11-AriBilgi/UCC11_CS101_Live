@@ -22,9 +22,6 @@ internal class Program
 
         Bilincli_Explicit.Main(args);
 
-
-
-
         Console.ReadKey(); // ekranda bekler
     }
 }
