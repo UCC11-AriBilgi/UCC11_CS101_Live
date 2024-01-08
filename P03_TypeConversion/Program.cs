@@ -20,6 +20,8 @@ internal class Program
 
         Bilincsiz_Implicit.Main(args);
 
+        Bilincli_Explicit.Main(args);
+
 
 
 
