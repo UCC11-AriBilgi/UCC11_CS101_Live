@@ -6,7 +6,9 @@ internal class Program
     {
         //ArtirmaEksiltme.Main(args);
 
-        Matematiksel.Main(args);
+        //Matematiksel.Main(args);
+
+        Karsilastirma.Main(args);
 
         Console.ReadKey();
     }
