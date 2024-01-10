@@ -10,7 +10,9 @@ internal class Program
 
         //Karsilastirma.Main(args);
 
-        As.Main(args);
+        //As.Main(args);
+
+        Is.Main(args);
 
         Console.ReadKey();
     }
