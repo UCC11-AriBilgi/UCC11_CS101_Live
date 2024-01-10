@@ -8,7 +8,9 @@ internal class Program
 
         //Matematiksel.Main(args);
 
-        Karsilastirma.Main(args);
+        //Karsilastirma.Main(args);
+
+        As.Main(args);
 
         Console.ReadKey();
     }
