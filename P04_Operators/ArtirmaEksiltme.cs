@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace P04_Operators
 {
-
     internal class ArtirmaEksiltme
     {
         public static void Main(string[] args)
