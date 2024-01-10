@@ -12,7 +12,9 @@ internal class Program
 
         //As.Main(args);
 
-        Is.Main(args);
+        //Is.Main(args);
+
+        Mantiksal.Main(args);
 
         Console.ReadKey();
     }
