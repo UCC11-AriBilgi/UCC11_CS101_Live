@@ -4,7 +4,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        ArtirmaEksiltme.Main(args);
+        //ArtirmaEksiltme.Main(args);
+
+        Matematiksel.Main(args);
 
         Console.ReadKey();
     }

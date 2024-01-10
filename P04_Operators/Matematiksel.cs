@@ -18,7 +18,43 @@ namespace P04_Operators
             Console.WriteLine("*                                        *");
             Console.WriteLine("******************************************");
 
+            #region 1. Standart operatörler
+            // Normal işlemler
+            int x = 10;
+            int y = 8;
 
+            int toplam = x + y;
+                        
+            int top1;
+
+            top1 = x + y;
+
+            int fark = x - y;
+
+            int carpim = x * y;
+
+            int bolum = x / y;
+
+            int mod = x % y; // Bölüm sonucu kalan değere ihtiyacımız olduğunda
+
+            Console.WriteLine("Toplam = " + toplam);
+            Console.WriteLine("Toplam = " + top1 + "\n\n");
+            Console.WriteLine("Fark = " + fark+"\n\n");
+            Console.WriteLine("Çarpım = " + carpim+"\n\n");
+            Console.WriteLine("Bölüm = " + bolum + "\n\n");
+            Console.WriteLine("Mod = " + mod + "\n\n");
+
+            //Console.WriteLine("Sonuç : h={0}\ti={1}\tj={2}\tk={3}\tl{4}\n\n", h, i, j, k, l);
+
+            // string interpolation
+            Console.WriteLine($"Toplam = {toplam} \n Fark = {fark} \n Çarpım = {carpim} - Bölüm = {bolum} - Mod = {mod}\n\n");
+
+            #endregion
+
+            #region 1.1 Değişik bir durum
+
+
+            #endregion
 
 
 
