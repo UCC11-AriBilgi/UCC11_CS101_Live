@@ -14,7 +14,11 @@ internal class Program
 
         //Is.Main(args);
 
-        Mantiksal.Main(args);
+        //Mantiksal.Main(args);
+
+        Atama.Main(args);
+
+
 
         Console.ReadKey();
     }
