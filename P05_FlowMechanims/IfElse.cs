@@ -70,24 +70,28 @@ namespace P05_FlowMechanims
 
             #region 3. if-else..
             // ekrandan hem kullanıcı adı hem de şifre alacak olan mesajlar veriniz
-            // buları uygun değişgenlerde tutunuz (kulad,kulsifre..string değişgenler olsun)
+            // bunları uygun değişgenlerde tutunuz (kulad,kulsifre..string değişgenler olsun)
             // sabit olarak verilmiş kullanıcı adı ve şifreye uygun olması durumunda uygun mesajlar veriniz
+            const string kulad = "admin";
+            const string kulsifre = "Q1w2e3";
 
-            Console.WriteLine("Lütfen cinsiyet bilgisini giriniz (e/k) : ");
+            string ekulad;
+            string ekulsifre;
 
-            char cins = Convert.ToChar(Console.ReadLine()); // ekrandan girilen değeri tek karakterlik algılatmak için
 
-            if (cins == 'e')
+            Console.WriteLine("Lütfen kullanıcı adınızı giriniz : ");
+            ekulad = Console.ReadLine();
+
+            Console.WriteLine("Lütfen kullanıcı şifrenizi giriniz : ");
+            ekulsifre= Console.ReadLine();
+
+            if (ekulad == kulad && ekulsifre == kulsifre) // 2 değeri tek bir satırda kontrol ediyorum
             {
-                Console.WriteLine("Erkeksiniz....");
-            }
-            else if (cins == 'k') // '' char veri tipi için
-            {
-                Console.WriteLine("Kadınsınız...");
+                Console.WriteLine(" Bilgiler doğru ..Sisteme hoşgeldiniz");
             }
             else
             {
-                Console.WriteLine("Lütfen doğru değer giriniz...");
+                Console.WriteLine("Bilgiler yanlış...Tekrar deneyiniz...");
             }
 
 
