@@ -16,7 +16,9 @@ internal class Program
 
         //Mantiksal.Main(args);
 
-        Atama.Main(args);
+        //Atama.Main(args);
+
+        Ternary.Main(args);
 
 
 
