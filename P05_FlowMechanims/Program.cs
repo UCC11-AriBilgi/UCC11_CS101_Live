@@ -1,7 +1,12 @@
-﻿internal class Program
+﻿using P05_FlowMechanims;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        IfElse.Main(args);
+
+
+        Console.ReadKey();
     }
 }
