@@ -6,8 +6,9 @@ internal class Program
     {
         //IfElse.Main(args);
 
-        SwitchCase.Main(args);
+        //SwitchCase.Main(args);
 
+        For.Main(args);
 
         Console.ReadKey();
     }
