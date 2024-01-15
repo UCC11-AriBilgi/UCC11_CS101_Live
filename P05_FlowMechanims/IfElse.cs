@@ -78,7 +78,7 @@ namespace P05_FlowMechanims
             string ekulad;
             string ekulsifre;
 
-
+            // Örnek bir kullanıcı girişi
             Console.WriteLine("Lütfen kullanıcı adınızı giriniz : ");
             ekulad = Console.ReadLine();
 
