@@ -27,7 +27,6 @@ namespace P05_FlowMechanims
             for (int sayi = 1; sayi < 11; sayi++)
             {
                 toplam= toplam + sayi; // toplam += sayi;
-
             }
             Console.WriteLine($"1-10 arası sayıların tolamı : {toplam}");
 
