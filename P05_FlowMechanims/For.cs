@@ -79,28 +79,38 @@ namespace P05_FlowMechanims
 
             #region for.3
             // 1 den 1000'e kadar(sınırlar dahil olmak üzere) olan sayılar içinde 5'e tam bölünen ancak 7'ye tam bölünmeyen sayıları alt alta listeleyen ve bu sayıların kaç tane olduğu bulan ve toplamını gösteren bir program yazınız
-            int toplam = 0;
-            int adet = 0; // 
-            int sayac;
+            //            int toplam = 0;
+            //            int adet = 0; // 
+            //            int sayac;
 
-            // ??
-            for (sayac = 0; sayac < 1001; sayac += 5) // 2,3,4 zaten 5 den küçük
-            {
-                if (sayac % 35 == 0)
+            //            // ??
+            //            for (sayac = 0; sayac < 1001; sayac += 5) // 2,3,4 zaten 5 den küçük
+            //            {
+            //                if (sayac % 35 == 0)
 
-//                if (sayac % 5 == 0 && sayac % 7 != 0) // sayac % 35 == 0
-                    continue;
-                adet++; // olaya uyan sayı adedini 1 artır..
+            ////                if (sayac % 5 == 0 && sayac % 7 != 0) // sayac % 35 == 0
+            //                    continue;
+            //                adet++; // olaya uyan sayı adedini 1 artır..
 
-                toplam += sayac;
+            //                toplam += sayac;
 
-                Console.WriteLine("Sayı = {0}",sayac);
+            //                Console.WriteLine("Sayı = {0}",sayac);
 
-            }
+            //            }
 
-            Console.WriteLine("Sayıların adedi : {0}\n\n",adet);
+            //            Console.WriteLine("Sayıların adedi : {0}\n\n",adet);
 
-            Console.WriteLine("Sayıların toplamı : {0}\n\n",toplam);
+            //            Console.WriteLine("Sayıların toplamı : {0}\n\n",toplam);
+
+            #endregion
+
+            #region for.4 
+            // Daily WorkOut....
+            // Konsol ekranına girilen 0-100 (sınırlar dahil) arasındaki 10 notun en büyüğünü, en küçüğünü ve bunların ortalamasını ekrana gösteren programı yazınız...
+
+
+
+
 
             #endregion
 
