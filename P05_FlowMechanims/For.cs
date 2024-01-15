@@ -29,7 +29,7 @@ namespace P05_FlowMechanims
                 toplam= toplam + sayi; // toplam += sayi;
 
             }
-            Console.WriteLine($"1-10 arası sayıların çarpımı : {toplam}");
+            Console.WriteLine($"1-10 arası sayıların tolamı : {toplam}");
 
 
             #endregion
