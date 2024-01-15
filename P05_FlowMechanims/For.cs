@@ -109,6 +109,7 @@ namespace P05_FlowMechanims
             // Konsol ekranına girilen 0-100 (sınırlar dahil) arasındaki 10 notun en büyüğünü, en küçüğünü ve bunların ortalamasını ekrana gösteren programı yazınız...
 
 
+
             #endregion
 
         }
