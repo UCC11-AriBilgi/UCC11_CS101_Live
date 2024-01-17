@@ -8,7 +8,9 @@ internal class Program
 
         //SwitchCase.Main(args);
 
-        For.Main(args);
+        //For.Main(args);
+
+        While.Main(args);
 
         Console.ReadKey();
     }
