@@ -106,7 +106,17 @@ namespace P05_FlowMechanims
 
             #region for.4 
             // Daily WorkOut....
-            // Konsol ekranına girilen 0-100 (sınırlar dahil) arasındaki 10 notun en büyüğünü, en küçüğünü ve bunların ortalamasını ekrana gösteren programı yazınız...
+            // Konsol ekranına girilen 0-100 (sınırlar dahil) arasındaki 3 notun en büyüğünü, en küçüğünü ve bunların ortalamasını ekrana gösteren programı yazınız...
+            // ??
+            // çok minimal anlamda bir sıralama algoritması
+
+            // Öncelikle kullanacağım değişgenleri tanımlıyorum
+            
+            int not; // Bu benim ekrandan alacağım not verisini tutacak olan değişgen
+            int bnot = 0; // Büyük olan notun tutulacağı değişgen
+            int knot = 0; // Küçük olan notun tutulacağı değişgen
+            int toplam = 0; // derslerin not toplamını tutacak değişgen
+
 
 
 
