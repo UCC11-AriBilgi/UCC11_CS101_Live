@@ -60,31 +60,86 @@ namespace P05_FlowMechanims
 
 
             #region while 3 (nested)
-            // devamlı sekilde...nested
+            //// devamlı sekilde...nested
 
-            Console.Write("Bir sayı giriniz : ");
-            int sayi=Convert.ToInt32(Console.ReadLine()) ;
+            //Console.Write("Bir sayı giriniz : ");
+            //int sayi=Convert.ToInt32(Console.ReadLine()) ;
 
-            int index = 1;
+            //int index = 1;
 
-            // İç içe while döngüleri
-            while (index <= sayi) // olduğu sürece
+            //// İç içe while döngüleri
+            //while (index <= sayi) // olduğu sürece
+            //{
+            //    Console.WriteLine();
+
+            //    int j = 1;
+
+            //    while (j <= index) 
+            //    {
+            //        Console.Write("* ");
+            //        j++;
+            //    }
+
+            //    index++;
+            //}
+
+            #endregion
+
+            #region nested while 2--> do while
+
+            // ekrana 4 işlem için bir mesaj çıkartıp,seçenek öğrenilip buna göre gerekli yerlere dallanıp işlemi gerçekleştirmek
+
+            char choice;
+            int MenuOption;
+            int Number1, Number2;
+
+            do
             {
-                Console.WriteLine();
+                Console.WriteLine("1.Toplama, 2.Çıkarma, 3.Çarpma, 4.Bölme"  ); // bir anlamda menü
 
-                int j = 1;
+                MenuOption=Convert.ToInt32(Console.ReadLine());
 
-                while (j <= index) 
+                switch (MenuOption)
                 {
-                    Console.Write("* ");
-                    j++;
+                    case 1:
+                        Console.WriteLine("sayılarınızı giriniz:");
+                        Number1=Convert.ToInt32(Console.ReadLine()) ;
+                        Number2 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine($"Sonuç : {Number1 + Number2}");
+                        break;
+
+                    case 2:
+                        Console.WriteLine("sayılarınızı giriniz:");
+                        Number1 = Convert.ToInt32(Console.ReadLine());
+                        Number2 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine($"Sonuç : {Number1 - Number2}");
+                        break;
+
+                    case 3:
+                        Console.WriteLine("sayılarınızı giriniz:");
+                        Number1 = Convert.ToInt32(Console.ReadLine());
+                        Number2 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine($"Sonuç : {Number1 * Number2}");
+                        break;
+
+                    case 4:
+                        Console.WriteLine("sayılarınızı giriniz:");
+                        Number1 = Convert.ToInt32(Console.ReadLine());
+                        Number2 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine($"Sonuç : {Number1 /Number2}");
+                        break;
+
+
+                    default:
+                        Console.WriteLine("Geçersiz seçenek");
+                        break;
                 }
 
-                index++;
-            }
+                Console.WriteLine("Lütfen devam etmek için d tuşuna basınız, diğer tuşlar çıkar.."  );
 
+                choice=Convert.ToChar(Console.ReadLine());
 
-
+            } while (Char.ToUpper(choice)== 'D'); // Büyük D olması kontrol ediliyor...
 
 
 
