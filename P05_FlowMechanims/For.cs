@@ -166,13 +166,27 @@ namespace P05_FlowMechanims
             #endregion
 
             #region for.5
-            //0 dan 100 e kadar olan sayıları 5er 5er artışlı olacak şekilde ve bir satırda 6 adet sayı yazacak şekilde gösteriniz/listeleyiniz. Not: Gösterilecek sayılar arasında da görünüm karmasıklığını azaltmak açısından biraz boşluk 1-2 karakter..bırakınız..(sistem gereklilikleri dokümanı)
+            //0 dan 100 e kadar olan sayıları 5er 5er artışlı olacak şekilde ve bir satırda 6 adet sayı yazacak(yanyana) şekilde gösteriniz/listeleyiniz. Not: Gösterilecek sayılar arasında da görünüm karmasıklığını azaltmak açısından biraz boşluk 1-2 karakter..bırakınız..(sistem gereklilikleri dokümanı)
             // 
             // a  b  c  d  e  f
             // g  h  ı  i  j  k
             // ....
 
+            int satiradet = 0; // tek bir satırda yazılacak olan eleman sayısı
 
+            for (int sayi = 0; sayi <= 100; sayi+=5) // 5'er artış
+            {
+                if (satiradet % 6 == 0) //demekki bir satırı doldurmuşum..Bir alt satıra geçebilirim..
+                {
+                    Console.WriteLine(); // bir alt satıra geç
+                }
+
+                Console.Write("{0}  ",sayi); // biraz boşluklu
+
+                satiradet++;
+            }
+
+            Console.WriteLine("\n\nBitti...");
 
             #endregion
 
