@@ -112,55 +112,55 @@ namespace P05_FlowMechanims
 
             // Öncelikle kullanacağım değişgenleri tanımlıyorum
             
-            int not; // Bu benim ekrandan alacağım not verisini tutacak olan değişgen
-            int bnot = 0; // Büyük olan notun tutulacağı değişgen
-            int knot = 0; // Küçük olan notun tutulacağı değişgen
-            int toplam = 0; // derslerin not toplamını tutacak değişgen
+            //int not; // Bu benim ekrandan alacağım not verisini tutacak olan değişgen
+            //int bnot = 0; // Büyük olan notun tutulacağı değişgen
+            //int knot = 0; // Küçük olan notun tutulacağı değişgen
+            //int toplam = 0; // derslerin not toplamını tutacak değişgen
 
-            // ekrandan veri girişi yapılacak
+            //// ekrandan veri girişi yapılacak
 
-            // Aşağıdaki yapıyla dinamik bir şekilde ekrandan veri alma ve işlem yapma kullanılacak
-            for (int sayac = 0; sayac < 3; sayac++)
-            {
-                Console.WriteLine(sayac + 1 +". sınav notunu giriniz : "); // dinamik yapı
+            //// Aşağıdaki yapıyla dinamik bir şekilde ekrandan veri alma ve işlem yapma kullanılacak
+            //for (int sayac = 0; sayac < 3; sayac++)
+            //{
+            //    Console.WriteLine(sayac + 1 +". sınav notunu giriniz : "); // dinamik yapı
 
-                not=Convert.ToInt32(Console.ReadLine()); // notumu okudum
+            //    not=Convert.ToInt32(Console.ReadLine()); // notumu okudum
 
-                if (not > 100 || not < 0) // Sınırlar dışında veri girdiyse
-                {
-                    Console.Write("Geçersiz bir not girdiniz...Lütfen tekrar deneyiniz..");
-                    continue;
-                }
+            //    if (not > 100 || not < 0) // Sınırlar dışında veri girdiyse
+            //    {
+            //        Console.Write("Geçersiz bir not girdiniz...Lütfen tekrar deneyiniz..");
+            //        continue;
+            //    }
 
-                // Doğru bilgi girildiyse
+            //    // Doğru bilgi girildiyse
 
-                // ilk çalışma durumunda girilen değeri hem büyük hem de küçük olarak algılıyorum
+            //    // ilk çalışma durumunda girilen değeri hem büyük hem de küçük olarak algılıyorum
 
-                if (sayac == 0)
-                {
-                    bnot = not;
-                    knot = not;
-                }
-                else
-                {
-                    if (not > bnot)
-                    {
-                        bnot = not;
-                    }
+            //    if (sayac == 0)
+            //    {
+            //        bnot = not;
+            //        knot = not;
+            //    }
+            //    else
+            //    {
+            //        if (not > bnot)
+            //        {
+            //            bnot = not;
+            //        }
 
-                    if (not < knot)
-                    {
-                        knot = not;
-                    }
-                }
+            //        if (not < knot)
+            //        {
+            //            knot = not;
+            //        }
+            //    }
 
-                toplam += not; // ekrandan girilen değeri toplam ekliyor
-            }
+            //    toplam += not; // ekrandan girilen değeri toplam ekliyor
+            //}
 
-            // Parametrik kullanı
-            //Console.WriteLine("\n\nEn büyük not : {0}\nEn küçük not : {1}\nOrtalama : {2}",bnot,knot,toplam/3);
+            //// Parametrik kullanı
+            ////Console.WriteLine("\n\nEn büyük not : {0}\nEn küçük not : {1}\nOrtalama : {2}",bnot,knot,toplam/3);
 
-            Console.WriteLine($"\n\nEn büyük not : {bnot}\nEn küçük not : {knot}\nOrtalama : {toplam/3}");
+            //Console.WriteLine($"\n\nEn büyük not : {bnot}\nEn küçük not : {knot}\nOrtalama : {toplam/3}");
 
 
             #endregion
@@ -174,14 +174,14 @@ namespace P05_FlowMechanims
 
             int satiradet = 0; // tek bir satırda yazılacak olan eleman sayısı
 
-            for (int sayi = 0; sayi <= 100; sayi+=5) // 5'er artış
+            for (int sayi = 0; sayi <= 1000; sayi+=3) // 5'er artış
             {
-                if (satiradet % 6 == 0) //demekki bir satırı doldurmuşum..Bir alt satıra geçebilirim..
+                if (satiradet % 9 == 0) //demekki bir satırı doldurmuşum..Bir alt satıra geçebilirim..
                 {
                     Console.WriteLine(); // bir alt satıra geç
                 }
 
-                Console.Write("{0}  ",sayi); // biraz boşluklu
+                Console.Write("{0}\t",sayi); // biraz boşluklu
 
                 satiradet++;
             }
