@@ -157,7 +157,21 @@ namespace P05_FlowMechanims
                 toplam += not; // ekrandan girilen değeri toplam ekliyor
             }
 
+            // Parametrik kullanı
+            //Console.WriteLine("\n\nEn büyük not : {0}\nEn küçük not : {1}\nOrtalama : {2}",bnot,knot,toplam/3);
+
             Console.WriteLine($"\n\nEn büyük not : {bnot}\nEn küçük not : {knot}\nOrtalama : {toplam/3}");
+
+
+            #endregion
+
+            #region for.5
+            //0 dan 100 e kadar olan sayıları 5er 5er artışlı olacak şekilde ve bir satırda 6 adet sayı yazacak şekilde gösteriniz/listeleyiniz. Not: Gösterilecek sayılar arasında da görünüm karmasıklığını azaltmak açısından biraz boşluk 1-2 karakter..bırakınız..(sistem gereklilikleri dokümanı)
+            // 
+            // a  b  c  d  e  f
+            // g  h  ı  i  j  k
+            // ....
+
 
 
             #endregion
