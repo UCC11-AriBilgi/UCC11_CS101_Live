@@ -117,7 +117,47 @@ namespace P05_FlowMechanims
             int knot = 0; // Küçük olan notun tutulacağı değişgen
             int toplam = 0; // derslerin not toplamını tutacak değişgen
 
+            // ekrandan veri girişi yapılacak
 
+            // Aşağıdaki yapıyla dinamik bir şekilde ekrandan veri alma ve işlem yapma kullanılacak
+            for (int sayac = 0; sayac < 3; sayac++)
+            {
+                Console.WriteLine(sayac + 1 +". sınav notunu giriniz : "); // dinamik yapı
+
+                not=Convert.ToInt32(Console.ReadLine()); // notumu okudum
+
+                if (not > 100 || not < 0) // Sınırlar dışında veri girdiyse
+                {
+                    Console.Write("Geçersiz bir not girdiniz...Lütfen tekrar deneyiniz..");
+                    continue;
+                }
+
+                // Doğru bilgi girildiyse
+
+                // ilk çalışma durumunda girilen değeri hem büyük hem de küçük olarak algılıyorum
+
+                if (sayac == 0)
+                {
+                    bnot = not;
+                    knot = not;
+                }
+                else
+                {
+                    if (not > bnot)
+                    {
+                        bnot = not;
+                    }
+
+                    if (not < knot)
+                    {
+                        knot = not;
+                    }
+                }
+
+                toplam += not; // ekrandan girilen değeri toplam ekliyor
+            }
+
+            Console.WriteLine($"\n\nEn büyük not : {bnot}\nEn küçük not : {knot}\nOrtalama : {toplam/3}");
 
 
             #endregion
