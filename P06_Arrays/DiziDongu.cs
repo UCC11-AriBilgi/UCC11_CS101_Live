@@ -27,16 +27,16 @@ namespace P06_Arrays
             //Console.WriteLine("Dizinin toplamı (for ile) = " + toplam1);
 
             // foreach yapısıyla
-            int[] sayilar2 = { 55, 22, 13, 44, 51, 69, 77, 88, 19, 100, 11 };
+            //int[] sayilar2 = { 55, 22, 13, 44, 51, 69, 77, 88, 19, 100, 11 };
 
-            int toplam2 = 0;
+            //int toplam2 = 0;
 
-            foreach (int sayi in sayilar2)
-            {
-                toplam2 += sayi;
-            }
+            //foreach (int sayi in sayilar2)
+            //{
+            //    toplam2 += sayi;
+            //}
 
-            Console.WriteLine("Dizinin toplamı (foreach ile) = " + toplam2);
+            //Console.WriteLine("Dizinin toplamı (foreach ile) = " + toplam2);
 
             #endregion
 
@@ -75,7 +75,7 @@ namespace P06_Arrays
             char[] sesliler = { 'a', 'e', 'i', 'ı', 'o', 'ö', 'u', 'ü' };
 
             // Metin içersinde bulduğum sesli harfleri yerleştireceğim bir dizi daha oluşturuyorum.
-            char[] hangileri = new char[20];
+            char[] hangileri = new char[40];
             int hindex = 0; // hangileri dizisinin index bilgisini tutacak
 
             string metin = ""; // ekrandan alacağım metin
