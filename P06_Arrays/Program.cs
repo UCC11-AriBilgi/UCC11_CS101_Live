@@ -14,7 +14,9 @@ internal class Program
 
 
 
-        DiziGenel.Main(args);
+        //DiziGenel.Main(args);
+
+        DiziDongu.Main(args);
 
 
 
