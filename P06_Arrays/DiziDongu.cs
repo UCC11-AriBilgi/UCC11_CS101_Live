@@ -41,28 +41,75 @@ namespace P06_Arrays
             #endregion
 
             #region for/foreach 2
-            // Örnek 5
-            // Tanımlana bir sayılar dizisi içersindeki sayıların negatif/pozitif olma durumlarına göre bunların durumlarını sayıyı yazarak yanına yazdırma, adetlerini de yazdırma
+            //// Örnek 5
+            //// Tanımlana bir sayılar dizisi içersindeki sayıların negatif/pozitif olma durumlarına göre bunların durumlarını sayıyı yazarak yanına yazdırma, adetlerini de yazdırma
 
-            int[] sayilar = { -55, 22, 13, -54, -45, 5, 10 };
-            int pozitifadet=0, negatifadet=0;
+            //int[] sayilar = { -55, 22, 13, -54, -45, 5, 10 };
+            //int pozitifadet=0, negatifadet=0;
 
-            foreach (int sayi in sayilar)
+            //foreach (int sayi in sayilar)
+            //{
+            //    if (sayi > 0)
+            //    {
+            //        Console.WriteLine(sayi + " ..Pozitif");
+            //        pozitifadet++;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(sayi + " ..Negatif");
+            //        negatifadet++;
+            //    }
+            //}
+
+            //Console.WriteLine($"Dizideki\n\nPozitif sayı adedi {pozitifadet}\n\nNegatif sayı adedi {negatifadet}");
+
+
+            #endregion
+
+            #region foreach.3
+            // Örnek
+            // Kullanıcıdan bir metin girmesi istenecek(uzun olabilir)
+            // Girilen bu string bilgi içindeki sesli harf sayının bulunması
+            //
+            // Öncelikle seslilerin tanımlandığı bir dizi tanımlayalım
+            char[] sesliler = { 'a', 'e', 'i', 'ı', 'o', 'ö', 'u', 'ü' };
+
+            // Metin içersinde bulduğum sesli harfleri yerleştireceğim bir dizi daha oluşturuyorum.
+            char[] hangileri = new char[20];
+            int hindex = 0; // hangileri dizisinin index bilgisini tutacak
+
+            string metin = ""; // ekrandan alacağım metin
+            int adet = 0; // sesli harf adedini tutacak
+
+            Console.WriteLine("Lütfen metninizi giriniz...:");
+
+            metin = Console.ReadLine().ToLower(); // ekran girilen metnin tümünu küçük harfe çevirir...
+
+            // burada iç içe 2 tane for dongüsü kullanılarak
+
+            // Kullanacağım 1.for döngüsü tanımlanmış olan sesliler dizisi üzerinde dolaşacak..karakteri alacak...metnin içinde arastırmayı 2.for döngüsü yapacak
+
+            // 1.for döngüsü
+            for (int indexsesli = 0; indexsesli < sesliler.Length; indexsesli++)
             {
-                if (sayi > 0)
+                // 2.for döngüsü...Benim metin bilgim üzerinde dolasacak
+                // not girilen metin değeri sanki bir diziymiş gibi kullanılabilir
+                for (int indexmetin = 0; indexmetin < metin.Length; indexmetin++)
                 {
-                    Console.WriteLine(sayi + " ..Pozitif");
-                    pozitifadet++;
-                }
-                else
-                {
-                    Console.WriteLine(sayi + " ..Negatif");
-                    negatifadet++;
+                    if (metin[indexmetin] == sesliler[indexsesli])
+                    {
+                        // bunun hangi karakter olduğunu yaratmış olduğum ara diziye atıyorum
+                        hangileri[hindex] = metin[indexmetin];
+                        hindex++;
+
+                        adet++;
+                    }
                 }
             }
 
-            Console.WriteLine($"Dizideki\n\nPozitif sayı adedi {pozitifadet}\n\nNegatif sayı adedi {negatifadet}");
+            Console.WriteLine($"Girmiş olduğunuz metinde {adet} kadar sesli harf vardır...");
 
+            Console.WriteLine(hangileri);
 
             #endregion
 
