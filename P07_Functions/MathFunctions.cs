@@ -70,7 +70,6 @@ namespace P07_Functions
 
             Console.WriteLine("Ceiling " + sonuc5 );
 
-
             #endregion
 
         }
