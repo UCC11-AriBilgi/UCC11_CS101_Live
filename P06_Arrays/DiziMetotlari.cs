@@ -34,9 +34,27 @@ namespace P06_Arrays
 
             // Bir kullanım şekli
 
-            // farklı bir gösterim.
-            int[] dizi5 = new int[5] { 1, 2, 3, 4, 5 }; // diziyi yaratırken ilk değerlerini atama
+            // farklı bir gösterim ve ilginç bir kullanım
+            int[] dizi5 = new int[5] { 2, 3, 4, 6, 5 }; // diziyi yaratırken ilk değerlerini atama
 
+            Array dizi6 = Array.CreateInstance(typeof(int), dizi5);
+            // Burada ilginç bir yöntemle
+            // 2x3x4x6x5 boyutunda 5 boyutlu bir dizi yaratılmış oldu...
+
+            // Dikkat..CreateInstance yöntemiyle yaratılan dizilere diziadı[0,4] olarak erişmemiz mümkün olmuyor. Bunun yerine asağıdaki gibi yöntem kullanılıyor.
+            Array dizi7 = Array.CreateInstance(typeof(int), 5, 4, 3);
+
+            for (int i = 0; i <= dizi7.GetUpperBound(0); i++) // GetUpperBound bir dizinin en son index numarasını geri döndürür.
+                for (int j = 0; j <= dizi7.GetUpperBound(1); j++)
+                    for (int k = 0; k <= dizi7.GetUpperBound(2); k++)
+                        dizi7.SetValue(i + j + k, i, j, k);
+                        // normal sekilde değer atama yerine genelde SetValue metodu kullanılarak atama işlemi gerçekleştirilir.
+
+ 
+                
+            
+
+            
 
 
 
