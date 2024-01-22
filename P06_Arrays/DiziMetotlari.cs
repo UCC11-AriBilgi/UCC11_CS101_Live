@@ -52,25 +52,95 @@ namespace P06_Arrays
 
             // Dizileri   kopyalamak
 
-            int[] dizi8 = { 1, 2, 3, 4 };
+            //int[] dizi8 = { 1, 2, 3, 4 };
 
-            int[] dizi9 = new int[10];
+            //int[] dizi9 = new int[10];
 
-            dizi8.CopyTo(dizi9, 3); // Burada dizi8 in tüm elemanları dizi9 a 3.indexten itibaren kopyalıyor.
+            //dizi8.CopyTo(dizi9, 3); // Burada dizi8 in tüm elemanları dizi9 a 3.indexten itibaren kopyalıyor.
 
-
-
-          
-
-            
+            #endregion
 
 
+            #region Dizi Sıralama
+            //Array sehir = Array.CreateInstance(typeof(string), 8);
+
+            //// SetValue metoduyla diziyi dolduralım
+
+            //sehir.SetValue("Ankara", 0);
+            //sehir.SetValue("İstanbul", 1);
+            //sehir.SetValue("İzmir", 2);
+            //sehir.SetValue("Bursa", 3);
+            //sehir.SetValue("Adıyaman", 4);
+            //sehir.SetValue("Mersin", 5);
+            //sehir.SetValue("Van", 6);
+            //sehir.SetValue("Urfa", 7);
+
+
+            //Console.WriteLine("Sırasız dizi...");
+
+            //foreach (string isim in sehir)
+            //{
+            //    Console.WriteLine("Şehir adı : "+ isim  );
+            //}
+
+            //Console.WriteLine("\n\nSıralı hali..");
+
+            //Array.Sort(sehir); // sehir isimli dizimi sırala
+
+            //foreach (string isim in sehir)
+            //{
+            //    Console.WriteLine("Şehir adı : " + isim);
+            //}
+
+
+            //Array sayisal = Array.CreateInstance(typeof(int), 8);
+
+            //// SetValue metoduyla diziyi dolduralım
+
+            //sayisal.SetValue(200, 0);
+            //sayisal.SetValue(100, 1);
+            //sayisal.SetValue(5, 2);
+            //sayisal.SetValue(1, 3);
+            //sayisal.SetValue(15, 4);
+            //sayisal.SetValue(13, 5);
+            //sayisal.SetValue(51, 6);
+            //sayisal.SetValue(88, 7);
+
+
+            //Console.WriteLine("\n\nSırasız sayısal dizi...");
+
+            //foreach (int sayi in sayisal)
+            //{
+            //    Console.WriteLine("Sayı : " + sayi);
+            //}
+
+            //Console.WriteLine("\n\nSıralı sayısal hali..");
+
+            //Array.Sort(sayisal); // sayısal isimli dizimi sırala
+
+            //foreach (int sayi in sayisal)
+            //{
+            //    Console.WriteLine("Sayı : " + sayi);
+            //}
 
 
 
+            #endregion
 
 
+            #region Dizilerde arama
 
+            int[] dizi28 = { 500, 35, 56, 2, 8 };
+
+            Array.Sort(dizi28);
+
+            foreach (int sayi in dizi28)
+            {
+                Console.WriteLine(sayi);
+            }
+
+            Console.Write("dizi28 index : " + Array.BinarySearch(dizi28,350) + "\n\n");
+            // ilgili değeri dizi içinde arar. eğer bulursa bulduğu bu nesnenin indexini tutar, bulamazsa da negatif bir sayı üretir.Not.Binary Search metodunun doğru bir şekilde çalışabilmesi için diziyi Sort metodu ile öncelikle sıralamalıyız.
 
 
 
