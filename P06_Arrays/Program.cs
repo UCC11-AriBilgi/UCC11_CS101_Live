@@ -16,7 +16,12 @@ internal class Program
 
         //DiziGenel.Main(args);
 
-        DiziDongu.Main(args);
+        //DiziDongu.Main(args);
+
+        //CokBoyutluDizi.Main(args);
+
+        DiziMetotlari.Main(args);
+
 
 
 
