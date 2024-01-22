@@ -58,6 +58,8 @@ namespace P06_Arrays
 
             dizi8.CopyTo(dizi9, 3); // Burada dizi8 in tüm elemanları dizi9 a 3.indexten itibaren kopyalıyor.
 
+
+
           
 
             
