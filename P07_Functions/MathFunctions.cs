@@ -12,7 +12,47 @@ namespace P07_Functions
         {
 
             #region Abs/Mutlak değer
+            /*
+             Abs metodu verilen sayının mutlak değerini almak için kullanılmaktadır. Abs metodu parametre olarak farklı veri türlerinde değer alabilmekte ve aldığı veri türünde değer geri döndürmektedir. Yani int alıyorsa int , double alıyorsa double geri döndürür.
 
+            Kullanım Syntax;
+
+            int sonuc=Math.Abs(int sayi);
+
+            double sonuc=Math.Abs(double sayi);
+
+            float sonuc=Math.Abs(float sayi);
+
+            long sonuc=Math.Abs(long sayi);
+
+            decimal sonuc=Math.Abs(decimal sayi);
+
+            short sonuc=Math.Abs(short sayi);
+
+            sbyte sonuc=Math.Abs(sbyte sayi);
+
+
+
+             */
+
+            // Klavyeden girilen sayının mutlak değerini bulan programı yazınız
+
+            //
+            // Compute two absolute values.
+            //
+            //int value1 = -1000;
+            //int value2 = 20;
+
+            //int abs1 = Math.Abs(value1);
+            //int abs2 = Math.Abs(value2);
+
+            ////
+            //// Write integral results.
+            ////
+            //Console.WriteLine(value1);
+            //Console.WriteLine(abs1);
+            //Console.WriteLine(value2);
+            //Console.WriteLine(abs2);
             int sayi = -5;
 
             int sonuc=Math.Abs(sayi);
