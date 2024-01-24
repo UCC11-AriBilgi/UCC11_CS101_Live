@@ -173,6 +173,10 @@ namespace P07_Functions
 
             #endregion
 
+            // Haftasonu çalışması
+            // Kullanıcıdan bir string bilgi alacak uzun olabilir...
+            // Girilen bilginin ilk ve son hecesi ekrana yazdırılacak
+            // Hint - ayrıştırıcı olarak heceler arasındaki boşluk kullanılabilir
 
 
         }
