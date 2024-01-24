@@ -11,7 +11,7 @@ namespace P07_Functions
         public static void Main(string[] args)
         {
 
-            #region Abs/Mutlak değer
+            #region Abs/Mutlak değer Metodu
             /*
              Abs metodu verilen sayının mutlak değerini almak için kullanılmaktadır. Abs metodu parametre olarak farklı veri türlerinde değer alabilmekte ve aldığı veri türünde değer geri döndürmektedir. Yani int alıyorsa int , double alıyorsa double geri döndürür.
 
@@ -62,7 +62,7 @@ namespace P07_Functions
 
             #endregion
 
-            #region Min/Max
+            #region Min/Max Metodu
             // Min metodu, parametre olarak verilen iki sayıdan küçük olanı döndüren metod'dur. Bu metot bütün sayı türleri tarafından kullanılabilmektedir.
 
             /*
@@ -135,7 +135,7 @@ namespace P07_Functions
 
             #endregion
 
-            #region Pow 
+            #region Pow Metodu
 
             int sayi3 = 2;
 
@@ -146,7 +146,7 @@ namespace P07_Functions
 
             #endregion
 
-            #region Round
+            #region Round Metodu
             // Round metodu, parametre olarak verilen ondalıklı sayıyı en yakın tam sayıya yuvarlama işlemi yapmaktadır. Örneğin : 3.01 ise 3'e yuvarlar, 3.49 ise 3'e yuvarlar, 3.51 ise 4'e yuvarlar.
 
             //double sonuc = Math.Round(2.49);
@@ -176,7 +176,7 @@ namespace P07_Functions
 
             #endregion
 
-            #region Sqrt Karekök alma
+            #region Sqrt Metodu
             // Sqrt metodu, karakök bulmak için kullanılmaktdır. Double türünde verilen sayının karekökünü double türünde geri döndüren metot'tur.
 
             //Console.WriteLine("Karekökünü bulmak istediğiniz sayıyı giriniz");
@@ -203,7 +203,7 @@ namespace P07_Functions
 
             #endregion
 
-            #region Ceiling
+            #region Ceiling Metodu
             //Ceiling metodu, parametre olarak verilen ondalıklı sayıyı yukarıya veya tamsayının aynısına yuvarlama işlemi yapmak için kullanılmaktadır. Bu metodda virgülden sonra 0'dan başka herhangi bir sayı olduğunda yukarı yuvarlama işlemi yapmaktadır.
 
             //double sayi = 3.001;
