@@ -99,17 +99,17 @@ namespace P07_Functions
 
 
             #region Remove,Insert
-            string testString = "Bizim sınıf C# MCSD sınıfı";
+            //string testString = "Bizim sınıf C# MCSD sınıfı";
 
-            string removeString = testString.Remove(10);
+            //string removeString = testString.Remove(10);
 
-            string removeStringwIndex = testString.Remove(10,5);
+            //string removeStringwIndex = testString.Remove(10,5);
 
-            Console.WriteLine(testString + "\n\n" + removeString + "\n\n" + removeStringwIndex );
+            //Console.WriteLine(testString + "\n\n" + removeString + "\n\n" + removeStringwIndex );
 
-            string insertString = testString.Insert(5, " gdgdhkftykrk ");
+            //string insertString = testString.Insert(5, " gdgdhkftykrk ");
 
-            Console.WriteLine(testString + "\n\n" + insertString);
+            //Console.WriteLine(testString + "\n\n" + insertString);
 
 
             #endregion
@@ -123,18 +123,53 @@ namespace P07_Functions
             // -1 1.metnin karsılastırılan karakterinin diğer karakterden küçük olduğu (metin1 < metin2)
 
 
-            string metin8, metin9; // Karşılastırmaya girecek değerler
+            //string metin8, metin9; // Karşılastırmaya girecek değerler
 
-            metin8 = "mcsdASDery";
-            metin9 = "MCSDASgfr";
+            //metin8 = "mcsdASDery";
+            //metin9 = "MCSDASgfr";
 
-            int sonuc=String.Compare(metin8, metin9);
+            //int sonuc=String.Compare(metin8, metin9);
 
-            Console.WriteLine($"Sonuç {sonuc}");
+            //Console.WriteLine($"Sonuç {sonuc}");
+
+            #endregion
+
+            #region Concat
+            // String ifadeleri birleştirmek için kullanılır
+            // verilen ifadeleri ardı ardına ekler
+
+            string metin10 = "Türkiye'nin başkenti ";
+            string metin11 = "Ankara'dır ve nüfusu ";
+            int nufus = 85;
+            string metin12 = "milyondur..";
 
 
+            string sonuc1 = String.Concat(metin10, metin11, nufus," ",metin12);
+
+            Console.WriteLine(sonuc1);
 
 
+            #endregion
+
+            #region IndexOf,LastIndexOf
+            // IndexOf - bir karakterin veya verilen bir dizedeki ilk rastladığı indexi geri döndürür. Eğer böyle bir şey yoksa -1 değeri(bulamadım) döndürür
+            
+            string testString = "Bizim sınıf C# MCSD sınıfı";
+
+            int kPozisyon = testString.IndexOf('s');
+            int strPozisyon = testString.IndexOf("zim");
+
+            Console.WriteLine(testString + "\n\n");
+            Console.WriteLine(kPozisyon + "\n\n");
+            Console.WriteLine(strPozisyon + "\n\n");
+
+            // LasIndexOf - bir karakterin veya verilen bir dizedeki son rastladığı indexi geri döndürür. Eğer böyle bir şey yoksa -1 değeri(bulamadım) döndürür
+            int lPosisyon = testString.LastIndexOf('s');
+            int lstrPozisyon = testString.LastIndexOf("MC");
+
+            Console.WriteLine(testString + "\n\n");
+            Console.WriteLine(lPosisyon + "\n\n");
+            Console.WriteLine(lstrPozisyon + "\n\n");
 
             #endregion
 
