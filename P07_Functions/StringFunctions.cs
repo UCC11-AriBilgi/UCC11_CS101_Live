@@ -114,7 +114,29 @@ namespace P07_Functions
 
             #endregion
 
+            #region Compare
+            // Karşılastırma işlemi yapar.Karakter karakter karşılastırır.
+            // Karşılastırma işlemi sonrası bir değer döndürür
+            // Geri dönen değer
+            // 0 ise eşitlik (metin1=metin2)
+            // 1 ise 1.metnin karsılastırılan karakterinin diğer karakterden büyük olduğu (metin1 > metin2)
+            // -1 1.metnin karsılastırılan karakterinin diğer karakterden küçük olduğu (metin1 < metin2)
 
+
+            string metin8, metin9; // Karşılastırmaya girecek değerler
+
+            metin8 = "mcsdASDery";
+            metin9 = "MCSDASgfr";
+
+            int sonuc=String.Compare(metin8, metin9);
+
+            Console.WriteLine($"Sonuç {sonuc}");
+
+
+
+
+
+            #endregion
 
 
 
