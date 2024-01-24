@@ -178,7 +178,7 @@ namespace P07_Functions
             // Girilen bilginin ilk ve son hecesi ekrana yazdırılacak
             // Hint - ayrıştırıcı olarak heceler arasındaki boşluk kullanılabilir
 
-
+            // ....
         }
 
     }
