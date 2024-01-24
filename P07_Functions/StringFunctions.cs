@@ -86,13 +86,30 @@ namespace P07_Functions
 
             #region Substring
             //Substring(int StartIndex,int Uzunluk) türünden bir kullanımla startindex de tanımlamış olduğum indexden, uzunluk kadarını getirir
-            string metin7 = "Benim adım Ümit Karaçivi";
+            //string metin7 = "Benim adım Ümit Karaçivi";
 
-            string uzunlukolmadan = metin7.Substring(10);
+            //string uzunlukolmadan = metin7.Substring(10);
 
-            string uzunlukolarak= metin7.Substring(10,8);
+            //string uzunlukolarak= metin7.Substring(10,8);
 
-            Console.WriteLine(metin7 + "\n\n" + uzunlukolmadan + "\n\n" + uzunlukolarak );
+            //Console.WriteLine(metin7 + "\n\n" + uzunlukolmadan + "\n\n" + uzunlukolarak );
+
+
+            #endregion
+
+
+            #region Remove,Insert
+            string testString = "Bizim sınıf C# MCSD sınıfı";
+
+            string removeString = testString.Remove(10);
+
+            string removeStringwIndex = testString.Remove(10,5);
+
+            Console.WriteLine(testString + "\n\n" + removeString + "\n\n" + removeStringwIndex );
+
+            string insertString = testString.Insert(5, " gdgdhkftykrk ");
+
+            Console.WriteLine(testString + "\n\n" + insertString);
 
 
             #endregion
