@@ -63,7 +63,64 @@ namespace P07_Functions
             #endregion
 
             #region Min/Max
-            // parametre olarak verilen iki sayıdan küçük olanını geriye donduren bir fonksiyondur.Bütün sayı turleri tarafından kullanılabilir
+            // Min metodu, parametre olarak verilen iki sayıdan küçük olanı döndüren metod'dur. Bu metot bütün sayı türleri tarafından kullanılabilmektedir.
+
+            /*
+             int sonuc=Math.Min(int sayi1,int sayi2);
+
+            float sonuc=Math.Min(float sayi1,float sayi2);
+
+            double sonuc=Math.Min(double sayi1,double sayi2);
+
+            decimal sonuc=Math.Min(decimal sayi1,decimal sayi2);
+            
+            byte sonuc=Math.Min(byte sayi1,byte sayi2);
+
+            long sonuc=Math.Min(long sayi1,long sayi2);
+
+            short sonuc=Math.Min(short sayi1,short sayi2);
+
+            unit sonuc=Math.Min(unit sayi1,unit sayi2);
+
+            sbyte sonuc=Math.Min(sbyte sayi1,sbyte sayi2);
+
+            ulong sonuc=Math.Min(ulong sayi1,ulong sayi2);
+
+            ushort sonuc=Math.Min(ushort sayi1,ushort sayi2);
+
+             */
+
+            //Max metodu, parametre olarak verilen iki sayıdan büyük olanı döndüren metod'dur. Bu metot bütün sayı türleri tarafından kullanılabilmektedir. 
+
+            //int sonuc = Math.Max(int sayi1, int sayi2);
+
+            //float sonuc = Math.Max(float sayi1, float sayi2);
+
+            //double sonuc = Math.Max(double sayi1, double sayi2);
+
+            //decimal sonuc = Math.Max(decimal sayi1, decimal sayi2);
+
+            //byte sonuc = Math.Max(byte sayi1, byte sayi2);
+
+            //long sonuc = Math.Max(long sayi1, long sayi2);
+
+            //short sonuc = Math.Max(short sayi1, short sayi2);
+
+            //unit sonuc = Math.Max(unit sayi1, unit sayi2);
+
+            //sbyte sonuc = Math.Max(sbyte sayi1, sbyte sayi2);
+
+            //ulong sonuc = Math.Max(ulong sayi1, ulong sayi2);
+
+            //ushort sonuc = Math.Max(ushort sayi1, ushort sayi2);
+
+            //int sayi1 = 37;
+
+            //int sayi2 = 10;
+
+            //int sonuc = Math.Max(sayi1, sayi2);
+
+            //Console.WriteLine("İki sayıdan büyük olan sayı =" + sonuc);
 
             int sayi1 = 400;
             int sayi2 = 230;
@@ -73,6 +130,8 @@ namespace P07_Functions
 
             Console.WriteLine("Küçük sayı " + sonuc1+ "\n\n");
             Console.WriteLine("Büyük sayı " + sonuc2 + "\n\n");
+
+
 
             #endregion
 
@@ -88,7 +147,27 @@ namespace P07_Functions
             #endregion
 
             #region Round
-            // parametre olarak verilen ondalıklı bir sayıyı en yakın tamsayıya yuvarlama işlemi yapıyor.Yani 3.01-->3,3.51-->4 e gibi
+            // Round metodu, parametre olarak verilen ondalıklı sayıyı en yakın tam sayıya yuvarlama işlemi yapmaktadır. Örneğin : 3.01 ise 3'e yuvarlar, 3.49 ise 3'e yuvarlar, 3.51 ise 4'e yuvarlar.
+
+            //double sonuc = Math.Round(2.49);
+
+            //Console.WriteLine(sonuc);
+            ////Ekrana 2 yazar
+
+            //double sonuc1 = Math.Round(2.50);
+
+            //Console.WriteLine(sonuc1);
+            ////Ekrana 3 yazar
+
+            //double sonuc2 = Math.Round(2.01);
+
+            //Console.WriteLine(sonuc2);
+            ////Ekrana 2 yazar
+
+            //double sonuc3 = Math.Round(2.55);
+
+            //Console.WriteLine(sonuc3);
+            ////Ekrana 3 yazar
 
             Console.WriteLine(Math.Round(2.49));
             Console.WriteLine(Math.Round(2.2));
@@ -98,19 +177,99 @@ namespace P07_Functions
             #endregion
 
             #region Sqrt Karekök alma
+            // Sqrt metodu, karakök bulmak için kullanılmaktdır. Double türünde verilen sayının karekökünü double türünde geri döndüren metot'tur.
+
+            //Console.WriteLine("Karekökünü bulmak istediğiniz sayıyı giriniz");
+
+            //double sayi = double.Parse(Console.ReadLine());
+
+            //double sonuc = Math.Sqrt(sayi);
+
+            //Console.WriteLine(sonuc);
+
+            #endregion
+
+            #region BigMul Metodu
+            //BigMul metodu parametre olarak verilen 2 adet int tamsayının çarpımını,  long türünde geri döndüren metod'dur.
+
+            //int sayi1 = 37;
+
+            //int sayi2 = 28;
+
+            //long sonuc = Math.BigMul(sayi1, sayi2);
+
+            //Console.WriteLine(sonuc);
 
 
             #endregion
 
             #region Ceiling
-            // Parametre olarak verilen ondalıklı sayıyı yukarıya veya tamsayının aynısına yuvarlama işlemi yapar.Bu metodda virgulden sonra 0 dan baska herhangi bir sayı olduğunda yukarı yuvarlama işlemi yapar...
+            //Ceiling metodu, parametre olarak verilen ondalıklı sayıyı yukarıya veya tamsayının aynısına yuvarlama işlemi yapmak için kullanılmaktadır. Bu metodda virgülden sonra 0'dan başka herhangi bir sayı olduğunda yukarı yuvarlama işlemi yapmaktadır.
 
-            double sayi5 = 3.001;
-            double sonuc5 = Math.Ceiling(sayi5);
+            //double sayi = 3.001;
 
-            Console.WriteLine("Ceiling " + sonuc5 );
+            //double sonuc = Math.Ceiling(sayi);
+
+            //Console.WriteLine(sonuc);
+            ////Ekrana 4 yazacaktır.
+
+            //sayi = 3.00;
+
+            //sonuc = Math.Ceiling(sayi);
+
+            //Console.WriteLine(sonuc);
+            ////Ekrana 3 yazacaktır.
 
             #endregion
+
+            #region Floor Metodu
+            // Math.Floor(x) metodu, x olarak verilen ondalıklı sayıyı bir alt tamsayıya yuvarlar.
+
+            //Console.WriteLine(Math.Floor(9.99));
+
+            #endregion
+
+            #region DivRem Metodu
+            // Divrem metodu, bölme işleminde bölümü bulmak için kullanılan metod'dur. Bölünen ve bölen girildiğinde geriye bölme işleminin sonucunu veren ve 3. parametre olarak da kalanı veren parametredir. Sayısal veri türlerinin tümünde kullanılabilir.
+
+            //int kalan;
+
+            //Console.WriteLine("Lütfen bölünen sayıyı giriniz.");
+            //int bolunen = Int32.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Lütfen bölen sayıyı giriniz.");
+            //int bolen = Int32.Parse(Console.ReadLine());
+
+
+            //int bolum = Math.DivRem(bolunen, bolen, out kalan);
+
+            //Console.WriteLine("Bölme işleminde Bölüm={0}, Kalan={1}", bolum, kalan);
+
+            #endregion
+
+            #region Sign Metodu
+            //Sign metodu, parametre olarak verilen sayının negatif mi, pozitif mi, sıfıra eşit mi olduğunu bulmak için kullanılmaktadır. Geriye döndürdüğü değerler:
+
+            // 0 : Geriye 0(sıfır) döndürdüğünde Sıfıra eşit demektir.
+            // 1 : Geriye 1(bir) döndürdüğünde Pozitif demektir.
+            //- 1 : Geriye - 1(eksi bir) döndürdüğünde Negatif demektir.
+
+            //Console.WriteLine("Lütfen bir sayı giriniz");
+            //int sayi = Int32.Parse(Console.ReadLine());
+
+            //int sonuc = Math.Sign(sayi);
+
+            //switch (sonuc)
+            //{
+            //    case 0: Console.WriteLine("Sayı Sıfıra Eşit"); break;
+            //    case 1: Console.WriteLine("Sayı Pozitif"); break;
+            //    case -1: Console.WriteLine("Sayı Negatif"); break;
+
+            //    default: Console.WriteLine("Yanlış Değer Girildi"); break;
+            //}
+
+            #endregion
+
 
         }
     }
