@@ -72,17 +72,32 @@ namespace P07_Functions
             #region ToCharArray
             // verilen bir metin bilgisini karaktersel bir dizi durumuna çevirir
 
-            string metin6 = "Benim adım Ümit Karaçivi";
+            //string metin6 = "Benim adım Ümit Karaçivi";
 
-            char[] charArray=metin6.ToCharArray();
+            //char[] charArray=metin6.ToCharArray();
 
-            foreach (char c in charArray)
-            {
-                Console.Write(c);
-            }
+            //foreach (char c in charArray)
+            //{
+            //    Console.Write(c);
+            //}
 
 
             #endregion
+
+            #region Substring
+            //Substring(int StartIndex,int Uzunluk) türünden bir kullanımla startindex de tanımlamış olduğum indexden, uzunluk kadarını getirir
+            string metin7 = "Benim adım Ümit Karaçivi";
+
+            string uzunlukolmadan = metin7.Substring(10);
+
+            string uzunlukolarak= metin7.Substring(10,8);
+
+            Console.WriteLine(metin7 + "\n\n" + uzunlukolmadan + "\n\n" + uzunlukolarak );
+
+
+            #endregion
+
+
 
 
 
