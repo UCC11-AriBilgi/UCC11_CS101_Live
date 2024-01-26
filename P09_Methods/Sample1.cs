@@ -19,25 +19,31 @@ namespace P09_Methods
             #endregion
 
             #region 2. Geriye değer döndürmeyen ve parametre alan metot örneği
+            //Console.WriteLine("Kısa kenar : ");
+            //int kk = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Uzun kenar : ");
+            //int uk = Convert.ToInt32(Console.ReadLine());
+
+            //Hesapla(kk, uk);
+
+            #endregion
+
+            #region 3. Geriye değer döndüren ve parametre almayan metot örneği
+            //int sonuc = HesaplaPrmsiz(); // metoda git...dönen değeri sonuc değişgenine al
+
+            //Console.WriteLine($"\n\nDikdörgenin alanı(3) = {sonuc}");
+
+            #endregion
+
+            #region 4. Geriye değer döndüren ve parametre alan metot örneği
             Console.WriteLine("Kısa kenar : ");
             int kk = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Uzun kenar : ");
             int uk = Convert.ToInt32(Console.ReadLine());
 
-            Hesapla(kk, uk);
-
-            #endregion
-
-            #region 3. Geriye değer döndüren ve parametre almayan metot örneği
-            int sonuc = HesaplaPrmsiz(); // metoda git...dönen değeri sonuc değişgenine al
-
-            Console.WriteLine($"\n\nDikdörgenin alanı(3) = {sonuc}");
-
-            #endregion
-
-            #region 4. Geriye değer döndüren ve parametre alan metot örneği
-
+            Console.WriteLine($"\n\nDikdörgenin alanı(4) = {HesaplaPrmli(kk,uk)}");
 
             #endregion
 
@@ -83,6 +89,11 @@ namespace P09_Methods
             return alan; // alan değerini geriye postala
         }
 
+        // region4
+        private static int HesaplaPrmli(int pKisa,int pUzun)
+        {
+            return pKisa * pUzun;
+        }
 
     }
 }
