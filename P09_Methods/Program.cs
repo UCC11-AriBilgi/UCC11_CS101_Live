@@ -6,8 +6,9 @@ internal class Program
     {
         //Sample1.Main(args);
 
-        Sample2.Main(args);
+        //Sample2.Main(args);
 
+        Sample3.Main(args);
 
         Console.ReadKey();
     }
