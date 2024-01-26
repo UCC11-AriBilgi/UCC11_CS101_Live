@@ -32,12 +32,26 @@ namespace P09_Methods
             // Baz alınan değerler
             int Year = 360;
             int Month = 30;
-            int dayCount; // ekrandan alınacak gün sayısını tutacak değişgen
+            int dayCount; // ekrandan alınacak prim gün sayısını tutacak değişgen
             string gender; // alınacak cinsiyet bilgisi
 
+            Console.WriteLine("Lütfen cinsiyet bilgisini giriniz (E,K) : ");
+            gender= Console.ReadLine();
 
+            Console.WriteLine("\n\nLütfen prim gün sayısını giriniz : ");
+            dayCount=Convert.ToInt32(Console.ReadLine());
 
+            gender = gender.ToUpper(); // küçük harf girdiyse bile büyüğe cevir.
 
+            int year = EmeklilikHesap(gender, dayCount) / Year;
+            dayCount %= year;
+
+            int month=EmeklilikHesap(gender,dayCount) / Month;
+            dayCount %= Month;
+
+            int day = dayCount;
+
+            Console.WriteLine($"\n\nEmekliliğinize {year} yıl {month} ay {day} gün kalmıştır....");
 
         }
 
